@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/personagemListaFragment">
+
+    <fragment
+        android:id="@+id/personagemListaFragment"
+        android:name="com.example.minhaempresa.ui.marvel.fragment.ListaPersonagemFragment"
+        android:label="Lista de Personagens">
+        <action
+            android:id="@+id/action_personagemListaFragment_to_personagemComicFragment"
+            app:destination="@id/personagemComicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personagemComicFragment"
+        android:name="com.example.minhaempresa.ui.marvel.fragment.ListaPersonagemComicFragment"
+        android:label="Quadrinhos" >
+        <argument
+            android:name="characterId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaSeries"
+        android:label="Lista de Series"
+        android:name="com.example.minhaempresa.ui.marvel.fragment.ListaSeriesFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaComic"
+        android:label="Lista de Quadrinhos"
+        android:name="com.example.minhaempresa.ui.marvel.fragment.ListaComicFragment">
+    </fragment>
+
+</navigation>

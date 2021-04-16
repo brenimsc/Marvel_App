@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/logomarvel"
+            android:id="@+id/itemComicImagem"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/card"/>
+
+        <LinearLayout
+            android:id="@+id/linearTitulo"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemComicImagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/itemComicTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Titulo"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/itemComicTotalCriadoresTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total de criadores: "/>
+
+            <TextView
+                android:id="@+id/itemComicTotalCriadores"
+                android:layout_width="wrap_content"
+                tools:text="20"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/itemComicCriadorPrincipalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criador principal: "/>
+
+                <TextView
+                    android:id="@+id/itemComicCriadoPrincipal"
+                    tools:text="Adams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/itemComicPreco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="U$ 300"
+                android:textStyle="bold"
+                android:background="#EC1010"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/itemComicDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="Descrição"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

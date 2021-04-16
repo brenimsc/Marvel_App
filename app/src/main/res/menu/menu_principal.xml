@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/personagemListaFragment"
+        android:title="Personagens"
+        android:icon="@drawable/heroi24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/listaSeries"
+        android:title="Series"
+        android:icon="@drawable/lista24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/listaComic"
+        android:title="Quadrinhos"
+        android:icon="@drawable/comic24"
+        app:showAsAction="always"/>
+
+</menu>
