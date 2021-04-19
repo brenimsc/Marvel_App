@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
         controlador.addOnDestinationChangedListener{ controller, destination, arguments ->
             title = destination.label
@@ -37,6 +36,11 @@ class MainActivity : AppCompatActivity() {
                         main_activity_bottom_navigation.visibility = VISIBLE
                     else
                         main_activity_bottom_navigation.visibility = GONE
+
+                    if(temComponentes.backToolbar)
+                        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+                    else
+                        supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
             })
         }

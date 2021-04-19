@@ -46,7 +46,7 @@ class ListaPersonagemComicFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerComic.layoutManager = LinearLayoutManager(requireContext())
-        estadoViewModel.temComponentes = ComponentesVisuais(bottomNavigation = false)
+        estadoViewModel.temComponentes = ComponentesVisuais(bottomNavigation = false, backToolbar = true)
         viewModel.getComics(characterId)
         viewModel.comicsPersonagens.observeForever {
             adapter = ListaQuadrinhosAdapter(it.data.results,::abreUrl)

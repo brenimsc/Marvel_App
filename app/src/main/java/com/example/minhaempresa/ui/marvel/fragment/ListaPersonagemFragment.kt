@@ -9,9 +9,11 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import androidx.paging.PagedList
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.minhaempresa.ui.marvel.ListaPersonagemAdapter
 import com.example.minhaempresa.ui.marvel.R
+import com.example.minhaempresa.ui.marvel.response.Character
 import com.example.minhaempresa.ui.marvel.viewmodel.ComponentesVisuais
 import com.example.minhaempresa.ui.marvel.viewmodel.EstadoAppViewModel
 import com.example.minhaempresa.ui.marvel.viewmodel.PersonagemViewModel

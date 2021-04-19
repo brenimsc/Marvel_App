@@ -21,5 +21,5 @@ class EstadoAppViewModel : ViewModel() {
 }
 
 class ComponentesVisuais(val appBar: Boolean = true,
-    val bottomNavigation: Boolean = false
+    val bottomNavigation: Boolean = false, val backToolbar: Boolean = false
     )
